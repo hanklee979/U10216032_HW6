@@ -2,17 +2,31 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
 
-public class BallControl extends JPanel {
-  private Ball ball = new Ball();
-  private JButton jbtSuspend = new JButton("Suspend");
-  private JButton jbtResume = new JButton("Resume");
-  private JScrollBar jsbDelay = new JScrollBar();
+
+class BallControl extends JApplet {
+	
+	public static void main(String[] args){
+	
+	    JFrame frame = new JFrame();	
+		
+		Ball ball = new Ball();
+		JButton jbtSuspend = new JButton("Suspend");
+		JButton jbtResume = new JButton("Resume");
+		JScrollBar jsbDelay = new JScrollBar();		
+	    JPanel panel = new JPanel();
+    
+	
+	}
+	
+	
+	
+
 
   public BallControl() {
     // Group buttons in a panel
-    JPanel panel = new JPanel();
-    panel.add(jbtSuspend);
-    panel.add(jbtResume);
+	    panel.add(jbtSuspend);
+        panel.add(jbtResume);	
+
 
     // Add ball and buttons to the panel
     ball.setBorder(new javax.swing.border.LineBorder(Color.red));
